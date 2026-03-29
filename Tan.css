@@ -1,0 +1,196 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 228, 195);
+    font-family: sans-serif;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: rgb(34, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    /* position: sticky;
+    top: 0; */
+}
+
+nav .logo {
+    color: white;
+}
+
+nav .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* ===== CARD ===== */
+.content {
+    position: relative;
+    overflow: hidden;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* ดันรูปไปขวา */
+
+    width: fit-content;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+
+    transform: scale(0.85);
+    transition: 0.4s ease;
+}
+
+/* ===== IMAGE ===== */
+.content img {
+    width: 180px;
+    height: 250px;           /* 🔥 สมส่วน */
+    object-fit: cover;       /* 🔥 ไม่ยืด */
+    border-radius: 5px;
+
+    transition: 0.4s ease;
+}
+
+/* ===== TEXT ===== */
+.info {
+    position: absolute;
+    left: 30px;
+
+    opacity: 0;
+    transform: translateX(-120px); /* 🔥 ซ่อนซ้าย */
+    transition: 0.5s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+.content:hover {
+    transform: scale(1);
+    background-color: white;
+}
+
+/* รูปขยับ + ขยาย */
+.content:hover img {
+
+    transform: translateX(2000px) scale(1.1);
+}
+
+/* ข้อความเลื่อนออก */
+.content:hover .info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.box {
+    position: relative; /* 🔥 ใช้กำหนดตำแหน่งลูก */
+
+    display: flex;
+    align-items: center;
+
+    background: #ffd9b0;
+    width: 100%;
+    height: 730px;
+
+    padding-left: 80px; /* เว้นซ้าย */
+}
+
+/* 🔥 Personal Info = ชิดซ้าย */
+.Head-PI {
+    padding-top: 150px;
+    /* padding-bottom: 150px; */
+    position: absolute;
+    left: 80px;
+}
+
+/* 🔥 Story = อยู่กลางจอจริง */
+.Head-story {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* 🔥 ทำให้กลางเป๊ะ */
+    margin-bottom: 450px;
+}
+
+.Head-PI .Head-Text h1  {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size :45px;
+    padding-bottom: 15px;
+
+}
+
+.Head-PI .per-text {
+    border-radius: 5px; 
+    padding: 15px;
+    background: burlywood;
+    font-size: 22px;
+}
+
+/* ===== TYPE EFFECT ===== */
+.per-text p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black; /* เคอร์เซอร์ */
+
+    width: 0;
+    animation: typing 5s steps(40, end) forwards, blink 0.7s infinite;
+}
+
+/* delay ทีละบรรทัด */
+.p1 { animation-delay: 0s; }
+.p2 { animation-delay: 3s; }
+.p3 { animation-delay: 6s; }
+.p4 { animation-delay: 9s; }
+.p5 { animation-delay: 12s; }
+.p6 { animation-delay: 15s; }
+
+/* พิมพ์ */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* กระพริบ */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+footer {
+    /* margin-top: 120px; */
+    background-color: rgb(34, 7, 7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-content{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
