@@ -133,7 +133,7 @@ nav .nav-links li a {
 
 .Head-PI .Head-Text h1  {
     font-family: "IBM Plex Sans Thai", sans-serif;
-    font-weight: 100;
+    font-weight: 100px;
     font-style: normal;
     font-size :45px;
     padding-bottom: 15px;
@@ -154,7 +154,8 @@ nav .nav-links li a {
     border-right: 2px solid black; /* เคอร์เซอร์ */
 
     width: 0;
-    animation: typing 5s steps(40, end) forwards, blink 0.7s infinite;
+    animation: typing 5s steps(40, end) forwards, 
+    blink 0.7s infinite;
 }
 
 /* delay ทีละบรรทัด */
