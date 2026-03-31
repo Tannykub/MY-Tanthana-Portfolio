@@ -89,11 +89,15 @@ nav .nav-links {
     margin-bottom: 20px;
 }
 
+.H1-W {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
-    gap: 25px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 200px);
+    gap: 50px;
+    justify-content: 25px;
     align-items: center;
     margin-top: 20px;
 }
@@ -103,13 +107,13 @@ nav .nav-links {
     justify-content: center;
     align-items: center;
     
-    padding: 60px;
+    padding: 80px;
     background-color: black;
     color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; /* ขอบโค้ง */
+    border-radius: 20px; /*ขอบโค้ง*/
     font-size: 18px;
     font-weight: bold;
 
