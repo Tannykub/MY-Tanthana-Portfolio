@@ -144,6 +144,13 @@ footer {
     gap: 10px;
 }
 
+.footer-content a {
+
+    text-decoration: none;
+    color: #fff9f9;
+
+}
+
 #bgCanvas {
     position: fixed;
     top: 0;
