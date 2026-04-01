@@ -341,3 +341,23 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+.vinyl-box {
+    display: flex;
+    flex-direction: column; /* 🔥 เรียงบน-ล่าง */
+    justify-content: space-around;
+    align-items: center;
+
+    width: 300px;
+    height: 500px;
+
+    background: #bdbbb8;
+    border-radius: 20px;
+
+
+
+    margin-left: auto; /* 🔥 ดันไปขวา */
+    margin-right: 50px;
+
+    padding-top: 1020px;
+}
