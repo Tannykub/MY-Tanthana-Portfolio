@@ -186,7 +186,8 @@ nav .nav-links li a {
 .picture-portfolio1 img{
     height: 450px;
     width: auto;
-    padding-left: 15%;
+    padding-top: 150px;
+    padding-left: 550px;
     z-index: -1;
 }
 
@@ -207,4 +208,148 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.vinyl-type1 {
+    position: absolute;
+
+    left: 80px;     /* 🔥 ชิดซ้าย */
+    bottom: 700px;   /* 🔥 ชิดล่าง */
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    background-image: 
+        repeating-radial-gradient(
+            circle,
+            rgba(255,255,255,0.1) 0px,
+            rgba(255,255,255,0.1) 1px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-radial-gradient(
+            circle,
+            #111 0px,
+            #111 2px,
+            #000 3px,
+            #000 5px
+        );
+
+        transform: rotate(0deg);
+
+    /* 🔥 ทำให้ตอนหยุดค่อย ๆ ช้า */
+    transition: transform 2s ease-out;
+        /* animation: spin 4s linear infinite; */
+}
+
+.vinyl-type1:hover {
+    animation: spin 4s linear infinite;
+}
+
+.label-type1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* รูตรงกลาง */
+.label-type1::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.vinyl-type2 {
+    position: absolute;
+
+    left: 80px;     /* 🔥 ชิดซ้าย */
+    bottom: 380px;   /* 🔥 ชิดล่าง */
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    background-image: 
+        repeating-radial-gradient(
+            circle,
+            rgba(255,255,255,0.1) 0px,
+            rgba(255,255,255,0.1) 1px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-radial-gradient(
+            circle,
+            #111 0px,
+            #111 2px,
+            #000 3px,
+            #000 5px
+        );
+
+        transform: rotate(0deg);
+
+    /* 🔥 ทำให้ตอนหยุดค่อย ๆ ช้า */
+    transition: transform 2s ease-out;
+        /* animation: spin 4s linear infinite; */
+}
+
+.vinyl-type2:hover {
+    animation: spin 4s linear infinite;
+}
+
+.label-type2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* รูตรงกลาง */
+.label-type2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
