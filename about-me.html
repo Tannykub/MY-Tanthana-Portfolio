@@ -74,17 +74,18 @@
         <img src="picture/4f4f6b62-c02d-4fa8-9f01-1a6856e96f27.jpg" alt="My-Pic">
     </div>
     <div class ="ิvinyl-box">
-        <div class="vinyl-type1" id="vinyl">
+        
+        <div class="vinyl-type1" id="vinyl1">
                 <div class="label-type1"></div>
         </div>
         
-        <div class="vinyl-type2" id="vinyl">
+        <div class="vinyl-type2" id="vinyl2">
                 <div class="label-type2"></div>
         </div>
     </div>
 </div>
 
-    <script>
+<script>
 const vinyls = document.querySelectorAll('.vinyl-type1, .vinyl-type2');
 
 vinyls.forEach(vinyl => {
@@ -97,21 +98,23 @@ vinyls.forEach(vinyl => {
             angle += speed;
             vinyl.style.transform = `rotate(${angle}deg)`;
 
-            // 🔥 ค่อย ๆ ลดความเร็ว
+            // 🔥 ค่อย ๆ ช้าลง
             speed *= 0.98;
 
             requestAnimationFrame(animate);
         }
     }
 
+    // 🎯 hover = เริ่มหมุน
     vinyl.addEventListener('mouseenter', () => {
         spinning = true;
-        speed = 10; // 🔥 ความเร็วตอนหมุน
+        speed = 10;
         animate();
     });
 
+    // 🎯 เอาเมาส์ออก = ค่อย ๆ หยุด
     vinyl.addEventListener('mouseleave', () => {
-        spinning = false; // 🔥 ปล่อยให้มันค่อย ๆ ช้าลงเอง
+        spinning = false;
     });
 });
 </script>
