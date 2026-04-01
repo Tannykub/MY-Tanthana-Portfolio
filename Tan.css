@@ -212,9 +212,8 @@ footer {
 
 .vinyl-type1 {
     position: absolute;
-
-    left: 80px;     /* 🔥 ชิดซ้าย */
-    bottom: 700px;   /* 🔥 ชิดล่าง */
+    left: 80px;
+    bottom: 700px;
 
     width: 250px;
     height: 250px;
@@ -236,15 +235,8 @@ footer {
             #000 5px
         );
 
-        transform: rotate(0deg);
-
-    /* 🔥 ทำให้ตอนหยุดค่อย ๆ ช้า */
+   
     transition: transform 2s ease-out;
-        /* animation: spin 4s linear infinite; */
-}
-
-.vinyl-type1:hover {
-    animation: spin 4s linear infinite;
 }
 
 .label-type1 {
@@ -286,7 +278,7 @@ footer {
     position: absolute;
 
     left: 80px;     /* 🔥 ชิดซ้าย */
-    bottom: 250px;   /* 🔥 ชิดล่าง */
+    bottom: 350px;   /* 🔥 ชิดล่าง */
 
     width: 250px;
     height: 250px;
@@ -310,13 +302,9 @@ footer {
 
         transform: rotate(0deg);
 
-    /* 🔥 ทำให้ตอนหยุดค่อย ๆ ช้า */
+   
     transition: transform 2s ease-out;
         /* animation: spin 4s linear infinite; */
-}
-
-.vinyl-type2:hover {
-    animation: spin 4s linear infinite;
 }
 
 .label-type2 {

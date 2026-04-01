@@ -73,7 +73,7 @@
     <div class="picture-portfolio1">
         <img src="picture/4f4f6b62-c02d-4fa8-9f01-1a6856e96f27.jpg" alt="My-Pic">
     </div>
-    
+    <div class ="ิvinyl-box">
         <div class="vinyl-type1" id="vinyl">
                 <div class="label-type1"></div>
         </div>
@@ -81,9 +81,40 @@
         <div class="vinyl-type2" id="vinyl">
                 <div class="label-type2"></div>
         </div>
+    </div>
 </div>
 
-    
+    <script>
+const vinyls = document.querySelectorAll('.vinyl-type1, .vinyl-type2');
+
+vinyls.forEach(vinyl => {
+    let speed = 0;
+    let angle = 0;
+    let spinning = false;
+
+    function animate() {
+        if (spinning || speed > 0.01) {
+            angle += speed;
+            vinyl.style.transform = `rotate(${angle}deg)`;
+
+            // 🔥 ค่อย ๆ ลดความเร็ว
+            speed *= 0.98;
+
+            requestAnimationFrame(animate);
+        }
+    }
+
+    vinyl.addEventListener('mouseenter', () => {
+        spinning = true;
+        speed = 10; // 🔥 ความเร็วตอนหมุน
+        animate();
+    });
+
+    vinyl.addEventListener('mouseleave', () => {
+        spinning = false; // 🔥 ปล่อยให้มันค่อย ๆ ช้าลงเอง
+    });
+});
+</script>
 </body>
 
 <footer>    
