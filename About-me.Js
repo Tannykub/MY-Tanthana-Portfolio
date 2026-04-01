@@ -1,25 +1,30 @@
-const vinyls = document.querySelectorAll(".vinyl");
+// // รอให้ HTML โหลดก่อน
+// window.addEventListener("DOMContentLoaded", () => {
 
-vinyls.forEach(vinyl => {
-    let speed = 0;
-    let rotation = 0;
+//     const vinyls = document.querySelectorAll(".vinyl");
 
-    vinyl.addEventListener("mouseenter", () => {
-        speed = 10;
-    });
+//     vinyls.forEach(vinyl => {
+//         let speed = 0;
+//         let rotation = 0;
 
-    vinyl.addEventListener("mouseleave", () => {
-        speed = 2;
-    });
+//         vinyl.addEventListener("mouseenter", () => {
+//             speed = 12; // เร่ง
+//         });
 
-    function animate() {
-        rotation += speed;
-        speed *= 0.98;
+//         vinyl.addEventListener("mouseleave", () => {
+//             speed = 2; // เริ่มช้าลง
+//         });
 
-        vinyl.style.transform = `rotate(${rotation}deg)`;
+//         function animate() {
+//             rotation += speed;
+//             speed *= 0.97; // 🔥 ค่อย ๆ เบรก
 
-        requestAnimationFrame(animate);
-    }
+//             vinyl.style.transform = `rotate(${rotation}deg)`;
 
-    animate();
-});
+//             requestAnimationFrame(animate);
+//         }
+
+//         animate();
+//     });
+
+// });
