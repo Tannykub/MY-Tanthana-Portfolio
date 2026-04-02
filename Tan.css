@@ -216,7 +216,7 @@ footer {
 .vinyl-type1 {
     position: absolute;
     left: 80px;
-    bottom: 700px;
+    bottom: 35px;
 
     width: 250px;
     height: 250px;
@@ -281,7 +281,7 @@ footer {
     position: absolute;
 
     left: 80px;     /* 🔥 ชิดซ้าย */
-    bottom: 350px;   /* 🔥 ชิดล่าง */
+    bottom: 400px;   /* 🔥 ชิดล่าง */
 
     width: 250px;
     height: 250px;
@@ -358,7 +358,7 @@ footer {
     /* align-items: center; */
 
     width: 2500px;
-    height: 730px;
+    height: 680px;
 
     background: #bdbbb8;
     border-radius: 20px;
@@ -372,6 +372,22 @@ footer {
     right: 1200px;
 }
 
-.picture-portfolio1 img{
-    x
+.V-text {
+    position: relative;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size :15px;
+    padding-top: 50px;
+    
+    width: 400px;
+
+    right: 500px;
+}
+
+.V-text li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 20px;
 }
